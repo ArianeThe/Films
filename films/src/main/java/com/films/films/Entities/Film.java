@@ -1,10 +1,18 @@
 package com.films.films.Entities;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
-public class Film {
+@Setter
+@Getter
+@Table(name="Films")
+public class Film implements Serializable
+{
 
     @Id
     @Column(name="NO_FILM")
